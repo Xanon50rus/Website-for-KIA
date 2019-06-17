@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Kia_Test</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <form method="post" action="#" class="form" id="modal-form" style="display:none;">
+    <div class="modal-form__content">
+      <h2>Получите&#8194;все&#8194;выгоды!</h2>
+      <input type="text" name="name" class="form__field" placeholder="Введите номер"/>
+      <input type="submit" value="ПОЛУЧИТЬ ВСЕ ВЫГОДЫ" class="form__submit"/>
+      <span>Нажав на кнопку "Отправить заявку", я даю согласие на обработку моих персональных данных и получение рекламных предложений. С условиями обработки персональных данных и получения предложений - ознакомлен и согласен.</span>
+    </div>
+  </form>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-labelledby="mobileTitle" aria-describedby="mobileDescription" role="dialog">
+    <div class="mobile-menu__content" role="document">
+      <nav>
+        <div class="mobile-menu__content__header">
+          <h2>Подберите свой KIA</h2>
+          <i class="fas fa-times mobile-menu__close-button fa-2x" id="mobile-menu__close-button"></i>
+        </div>
+        <div class="main__first-section__list">
+          <ol>
+            <li><a href="#">Picanto</a></li>
+            <li><a href="#">Rio</a></li>
+            <li><a href="#Kia_Rio_X-line">Rio X-Line</a></li>
+            <li><a href="#Kia_Ceed_New">Ceed SW</a></li>
+            <li><a href="#">Cerato NEW</a></li>
+            <li><a href="#">Optima NEW</a></li>
+            <li><a href="#">Stinger</a></li>
+          </ol>
+          <ol>
+            <li><a href="#">Quoris</a></li>
+            <li><a href="#">Soul</a></li>
+            <li><a href="#">Spotrage</a></li>
+            <li><a href="#">Sorento</a></li>
+            <li><a href="#">Sorento Prime</a></li>
+            <li><a href="#">Mohave</a></li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <header>
+    <img src="img/logo_avtoholding.png" alt="logo_avtoholding">
+    <div class="header__adress">
+      <div class="header__adress__position-icon"></div>
+      <p>Краснодар, Тургеневское шоссе, 25</p>
+    </div>
+    <button type="button" name="button" class="header__btn-call" data-fancybox data-touch="false" href="#modal-form">ЗАКАЗАТЬ ЗВОНОК</button>
+    <img class="header__img-logo-kia" src="img/logo_kia.png" alt="logo_kia">
+    <i id="mobile-menu__open-button" class="fas fa-bars header__btn-mobile-menu fa-2x"></i>
+  </header>
+  <main>
+    <div class="red-background-block"></div>
+    <div class="main__photo-cars"></div>
+    <section class="main__first-section">
+      <div class="main__first-section__offer">
+        <h2>Только&#8194;до&#8194;конца&#8194;октября <br><span>МАСШТАБНЫЕ&#8194;ВЫГОДЫ</span><br>на&#8194;весь&#8194;модельный&#8194;ряд!</h2>
+        <button class="main__first-section__offer__btn-take-offer" type="button" name="button" data-fancybox data-touch="false" href="#modal-form">ЗАБРАТЬ ВЫГОДУ</button>
+      </div>
+      <div class="main__first-section__list-credit">
+        <nav>
+          <h2>Подберите свой KIA</h2>
+          <div class="main__first-section__list">
+            <ol>
+              <li><a href="#">Picanto</a></li>
+              <li><a href="#">Rio</a></li>
+              <li><a href="#Kia_Rio_X-line">Rio X-Line</a></li>
+              <li><a href="#Kia_Ceed_New">Ceed SW</a></li>
+              <li><a href="#">Cerato NEW</a></li>
+            </ol>
+            <ol>
+              <li><a href="#">Optima NEW</a></li>
+              <li><a href="#">Stinger</a></li>
+              <li><a href="#">Quoris</a></li>
+              <li><a href="#">Soul</a></li>
+              <li><a href="#">Spotrage</a></li>
+            </ol>
+            <ol>
+              <li><a href="#">Sorento</a></li>
+              <li><a href="#">Sorento Prime</a></li>
+              <li><a href="#">Mohave</a></li>
+            </ol>
+          </div>
+        </nav>
+        <div class="main__first-section__credit">
+          <h1>Супер кредит 0,1%</h1>
+          <h3>на KIA SPORTAGE, STINGER, SORENTO, SORENTO PRIME</h3>
+          <div class="main__first-section__credit__input-btn">
+            <input class="main__first-section__credit__input" type="text" name="phone-number" placeholder="Введите телефон">
+            <button class="main__first-section__credit__btn" type="button" name="button">ПОЛУЧИТЬ КРЕДИТ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__second-section">
+      <div id="Kia_Rio_X-line" class="main__second-section__left-car">
+        <h1>KIA&#8194;Rio&#8194;X-Line</h1>
+        <div class="main__second-section__info">
+          <div class="main__second-section__info__gift">
+            <div class="main__second-section__info__gift__i"></div>
+            <p>Зимняя резина<br>в подарок</p>
+          </div>
+          <h2>Выгода&#8194;до&#8194;60&#8194;000&#8194;руб.</h2>
+          <button class="main__second-section__info__btn-credit" type="button" name="button" data-fancybox data-touch="false" href="#modal-form">В кредит за 3 500 р./мес.</button>
+          <button class="main__second-section__info__btn-get-offer" type="button" name="button" data-fancybox data-touch="false" href="#modal-form">ПОЛУЧИТЬ ВЫГОДУ</button>
+          <button class="main__second-section__info__btn-spec-offer" type="button" name="button" data-fancybox data-touch="false" href="#modal-form">СПЕЦПРЕДЛОЖЕНИЕ</button>
+        </div>
+      </div>
+      <div id="Kia_Ceed_New" class="main__second-section__right-car">
+        <h1>KIA&#8194;Ceed&#8194;<span>NEW</span></h1>
+        <div class="main__second-section__info">
+          <div class="main__second-section__info__gift">
+            <div class="main__second-section__info__gift__i"></div>
+            <p>Зимняя резина<br>в подарок</p>
+          </div>
+          <h2>Выгода&#8194;до&#8194;60&#8194;000&#8194;руб.</h2>
+          <button class="main__second-section__info__btn-credit" type="button" name="button" data-fancybox data-touch="false" href="#modal-form">В кредит за 3 500 р./мес.</button>
+          <button class="main__second-section__info__btn-get-offer" type="button" name="button" data-fancybox data-touch="false" href="#modal-form">ПОЛУЧИТЬ ВЫГОДУ</button>
+          <button class="main__second-section__info__btn-spec-offer" type="button" name="button" data-fancybox data-touch="false" href="#modal-form">СПЕЦПРЕДЛОЖЕНИЕ</button>
+        </div>
+      </div>
+    </section>
+    <section class="main__third-section">
+      <div class="main__third-section_map">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3989c379bf686114425dce4f4ef7a44ba9e2454851d7cc4f44a44c834d7b0ff9&amp;width=100%&amp;height=373&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div class="main__third-section__bg-contacts">
+        <div class="main__third-section__contacts">
+          <h1>КОНТАКТЫ</h1>
+          <h2>Краснодар Тургеневское Шоссе,&nbsp;25</h2>
+          <h2>+7&#8194;(861)&#8194;212-34-92</h2>
+          <input type="text" name="main__third-section__contacts__input" class="main__third-section__contacts__input" placeholder="Введите телефон">
+          <button type="button" name="button" class="main__third-section__contacts__btn">ЗАКАЗАТЬ ЗВОНОК</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.js" defer charset="utf-8"></script>
+</body>
+
+</html>

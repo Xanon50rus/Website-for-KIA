@@ -1,0 +1,840 @@
+@font-face {
+  font-family: 'Kia Medium';
+  src: url('fonts/KIAM.eot');
+  src: url('fonts/KIAM.eot?#iefix') format('embedded-opentype'),
+  url('fonts/KIAM.woff') format('woff'),
+  url('fonts/KIAM.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kia Bold';
+  src: url('fonts/KIAB.eot');
+  src: url('fonts/KIAB.eot?#iefix') format('embedded-opentype'),
+  url('fonts/KIAB.woff') format('woff'),
+  url('fonts/KIAB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 320px;
+  font-family: 'Kia Medium';
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-animation: fade-in 1s linear; /* Safari 4+ */
+  -moz-animation: fade-in 1s linear; /* Fx 5+ */
+  -o-animation: fade-in 1s linear; /* Opera 12+ */
+  animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
+}
+
+/*==============MODAL-FORM==============*/
+
+.modal-form__content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 300px;
+}
+
+.modal-form__content h2 {
+  font-size: 24px;
+  font-family: 'Kia Bold';
+  font-weight: normal;
+}
+
+.form__field {
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #8d8d8d;
+  color: #8d8d8d;
+  width: 295px;
+  height: 50px;
+  background-color: transparent;
+}
+
+.form__submit {
+  width: 295px;
+  height: 50px;
+  outline: none;
+  background-color: #a30606;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.modal-form__content span {
+  font-size: 10px;
+  color: #d8d8d8;
+  text-align: center;
+  width: 300px;
+}
+
+/*==============MOBILE-MENU==============*/
+
+.mobile-menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #a30606;
+}
+
+.mobile-menu h2 {
+  display: inline-block;
+  color: white;
+}
+
+.mobile-menu a {
+  font-size: 20px;
+}
+
+.closed {
+  display: block;
+}
+
+.mobile-menu__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px 50px 20px 20px;
+}
+
+.mobile-menu__content__header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.mobile-menu .mobile-menu__close-button {
+  color: white;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.mobile-menu .mobile-menu__close-button:hover {
+  color: black;
+}
+
+
+
+/*==============HEADER==============*/
+
+header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+  max-width: 1180px;
+  min-width: 320px;
+  margin: 29px auto 27px auto;
+  position: relative;
+  z-index: 6;
+}
+
+header > * {
+  margin: 0 38px;
+}
+
+header > *:first-child {
+  margin-left: 0;
+  margin-right: 60px;
+}
+.header__adress {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.header__adress__position-icon {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+  width: 26px;
+  height: 26px;
+  margin-bottom: 7px;
+}
+
+.header__adress p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  width: 160px;
+  padding-left: 10px;
+}
+
+.header__btn-call {
+  padding: 0 38px;
+  height: 54px;
+  background-color: #a30606;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  color: white;
+  font-family: 'Kia Bold';
+  font-size: 16px;
+}
+
+.header__btn-call:hover {
+  background-color: #900606;
+}
+
+.header__img-logo-kia {
+  margin: 0;
+  margin-left: auto;
+}
+
+.header__btn-mobile-menu {
+  display: none;
+  margin-left: auto;
+}
+
+
+/*==============MAIN==============*/
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.red-background-block {
+  height: 781px;
+  width: 45.7vw;
+  min-width: 473px;
+  background-color: #a30606;
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.main__photo-cars {
+  background-image: url(../img/cars.png);
+  background-repeat: no-repeat;
+  width: 1037px;
+  height: 421px;
+  margin-left: 40.5vw;
+  position: absolute;
+  z-index: 1;
+}
+
+
+/*==========FIRST-SECTION==========*/
+
+.main__first-section {
+  max-width: 1180px;
+  min-width: 320px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.main__first-section__offer {
+  margin-bottom: 64px;
+}
+
+.main__first-section__offer h2 {
+  margin-top: 64px;
+  font-size: 30px;
+  font-family: 'Kia Bold';
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.main__first-section__offer span {
+  font-size: 48px;
+}
+
+.main__first-section__offer__btn-take-offer {
+  height: 62px;
+  padding: 0 63px;
+  color: #a30606;
+  background-color: white;
+  font-size: 18px;
+  font-family: 'Kia Bold';
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.main__first-section__offer__btn-take-offer:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.main__first-section__list-credit {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.main__first-section__list-credit nav h2 {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'Kia Bold';
+}
+
+.main__first-section__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.main__first-section__list ol:nth-child(2n) {
+  margin-right: 91px;
+}
+
+.main__first-section__list ol:last-child {
+  margin-right: 4vw;
+}
+
+.main__first-section__list ol {
+  padding: 0;
+  list-style-type: none;
+  margin-right: 65px;
+}
+
+.main__first-section__list li {
+  margin-bottom: 17px;
+}
+
+.main__first-section__list a {
+  color: white;
+  text-decoration: none;
+}
+
+.main__first-section__list a:hover {
+  color: #cd7f7f;
+}
+
+.main__first-section__credit {
+  color: black;
+  margin-top: 57px;
+  margin-left: 2vw;
+}
+
+.main__first-section__credit h1 {
+  font-size: 48px;
+  font-family: 'Kia Bold';
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.main__first-section__credit h3 {
+  font-size: 16px;
+  font-family: 'Kia Bold';
+  font-weight: normal;
+  margin: 10px 0 45px 0;
+}
+
+.main__first-section__credit__input {
+  padding: 17px;
+  width: 250px;
+  font-size: 16px;
+  margin-right: 2vw;
+}
+
+.main__first-section__credit__btn {
+  color: white;
+  border: 0;
+  background-color: #a30606;
+  outline: none;
+  padding: 19px 64px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.main__first-section__credit__btn:hover {
+  background-color: #900606;
+}
+
+
+/*==========SECOND-SECTION==========*/
+
+.main__second-section {
+  max-width: 1180px;
+  min-width: 320px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 54px auto 0 auto;
+}
+
+.main__second-section h1 {
+  font-size: 30px;
+  font-family: 'Kia Bold';
+  font-weight: normal;
+}
+
+.main__second-section__left-car {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  background-image: url(../img/Kia_Rio.png);
+  background-position: 25px;
+  background-repeat: no-repeat;
+  height: 261px;
+}
+
+.main__second-section__right-car {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  background-image: url(../img/Kia_Ceed.png);
+  background-position: 25px;
+  background-repeat: no-repeat;
+  height: 261px;
+}
+
+.main__second-section__right-car span {
+  color: #a30606;
+}
+
+.main__second-section__info {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 7.9vw;
+}
+
+.main__second-section__info__gift {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.main__second-section__info__gift__i {
+  height: 43px;
+  width: 43px;
+  background-color: #a30606;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -19px;
+  margin-right: 10px;
+}
+
+.main__second-section__info__gift p {
+  margin: 0;
+}
+
+.main__second-section__info h2 {
+  color: #a30606;
+  font-size: 18px;
+  font-family: 'Kia Bold';
+  font-weight: normal;
+  margin: 12px 0;
+}
+
+.main__second-section__info__btn-credit, .main__second-section__info__btn-get-offer,
+.main__second-section__info__btn-spec-offer {
+   height: 41px;
+   width: 220px;
+   margin-bottom: 10px;
+   font-size: 14px;
+   cursor: pointer;
+   border: 0;
+   outline: none;
+   color: white;
+ }
+
+ .main__second-section__info__btn-credit {
+   background-color: transparent;
+   border: 1px solid #a30606;
+   color: #a30606;
+ }
+
+ .main__second-section__info__btn-credit:hover {
+   background-color: #a30606;
+   color: white;
+ }
+
+ .main__second-section__info__btn-get-offer {
+   background-color: #a30606;
+ }
+
+ .main__second-section__info__btn-get-offer:hover {
+   background-color: #900606;
+ }
+
+ .main__second-section__info__btn-spec-offer {
+   background-color: #333333;
+ }
+
+ .main__second-section__info__btn-spec-offer:hover {
+   background-color: black;
+ }
+
+ /*==========THIRD-SECTION==========*/
+
+ .main__third-section {
+   margin-top: 72px;
+   max-width: 1550px;
+   min-width: 320px;
+   margin-left: auto;
+   display: -webkit-flex;
+   display: -ms-flex;
+   display: flex;
+   -webkit-align-items: center;
+   -ms-align-items: center;
+   align-items: center;
+   color: white;
+   margin-bottom: 40px;
+ }
+
+ .main__third-section_map {
+   position: absolute;
+   width: 50%;
+   box-sizing:border-box;
+ }
+
+ .main__third-section__bg-contacts {
+   display: -webkit-flex;
+   display: -ms-flex;
+   display: flex;
+   background-color: #a30606;
+   max-width: 910px;
+   height: 313px;
+   margin-left: auto;
+   position: relative;
+   z-index: 2;
+ }
+
+ .main__third-section__contacts {
+   margin-right: 30vw;
+   margin-left: 32px;
+   width: 305px;
+ }
+
+ .main__third-section__contacts > * {
+   font-weight: normal;
+   letter-spacing: 1px;
+ }
+
+ .main__third-section__contacts h1 {
+   font-size: 24px;
+   display: inline-block;
+   margin-bottom: 20px;
+ }
+
+ .main__third-section__contacts h2 {
+   font-size: 16px;
+   display: inline-block;
+   margin-top: 0;
+   margin-bottom: 20px;
+ }
+
+ .main__third-section__contacts__input {
+   background-color: transparent;
+   border: 1px solid white;
+   padding: 17px 19px;
+   width: 260px;
+   color: #ff9393;
+   font-size: 14px;
+   outline: none;
+ }
+
+ .main__third-section__contacts__input::-webkit-input-placeholder { color: #ff9393; }
+ .main__third-section__contacts__input:-ms-input-placeholder { color: #ff9393; }
+ .main__third-section__contacts__input::-ms-input-placeholder { color: #ff9393; }
+ .main__third-section__contacts__input::placeholder { color: #ff9393; }
+
+ .main__third-section__contacts__btn {
+   background-color: white;
+   padding: 17px 19px;
+   width: 300px;
+   color: #a30606;
+   border: 0;
+   cursor: pointer;
+   font-family: 'Kia Bold';
+   font-size: 16px;
+   outline: none;
+   margin-top: 12px;
+ }
+
+ .main__third-section__contacts__btn:hover {
+   background-color: #333333;
+   color: white;
+ }
+
+ /*=========MEDIA=========*/
+
+ @media screen and (max-width: 1374px) {
+   .red-background-block {
+     width: 43vw;
+   }
+
+   .main__first-section, .main__second-section, header {
+     padding-left: 15px;
+   }
+
+   .main__first-section__credit__input {
+     margin-right: 1vw;
+   }
+ }
+
+ @media screen and (max-width: 1334px) {
+   header > *:first-child {
+     margin-right: 2vw;
+   }
+
+   .header__btn-call {
+     display: none;
+   }
+
+   .header__img-logo-kia {
+      display: none;
+   }
+
+   .header__btn-mobile-menu {
+     display: block;
+     cursor: pointer;
+     margin-right: 3vw;
+   }
+
+   .header__btn-mobile-menu:hover {
+     color: #a30606;
+   }
+
+   .red-background-block {
+     min-width: 540px;
+     height: 880px;
+     width: 80vw;
+   }
+
+   .main__photo-cars {
+     margin-left: 2vw;
+     width: 92vw;
+     min-width: 320px;
+     position: relative;
+   }
+
+   .main__first-section__offer span {
+     font-size: 42px;
+   }
+
+   .main__first-section__list-credit nav {
+     display: none;
+   }
+
+   .main__first-section__list-credit {
+     -webkit-justify-content: center;
+     -ms-justify-content: center;
+     justify-content: center;
+   }
+
+   .main__first-section__credit {
+     margin: 0;
+   }
+
+   .main__second-section {
+     -webkit-justify-content: center;
+     -ms-justify-content: center;
+     justify-content: center;
+   }
+
+   .main__second-section__left-car {
+     background-position: 0;
+   }
+
+   .main__second-section__right-car {
+     background-position: 0;
+   }
+
+   .main__third-section {
+     -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+     flex-direction: column;
+   }
+
+   .main__third-section_map {
+     position: relative;
+     z-index: 2;
+     width: 100%;
+     margin-bottom: 40px;
+   }
+
+   .main__third-section__bg-contacts {
+     margin-bottom: 62px;
+     width: 92vw;
+     margin-left: 5px;
+   }
+ }
+
+@media screen and (max-width: 1063px) {
+  .main__second-section__right-car {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 612px) {
+  .main__first-section__credit__btn {
+    margin-top: 20px;
+    padding: 19px 17px;
+    width: 287px;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  header {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .header__adress {
+    margin: 20px auto 0 auto;
+    width: 400px;
+    order: 2;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+
+  .header__adress p {
+    width: auto;
+    padding-left: 10px;
+  }
+
+  .header__btn-mobile-menu {
+    order: 1;
+    margin-left: auto;
+    padding-right: 10px;
+  }
+
+  .header__btn-mobile-menu {
+    color: white;
+  }
+
+  .header__btn-mobile-menu:hover {
+    color: #333333;
+  }
+
+  .main__photo-cars {
+    background-position: -7vw;
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .red-background-block {
+    height: 930px;
+  }
+
+  .main__third-section__contacts {
+    margin-left: 3vw;
+  }
+}
+
+@media screen and (max-width: 515px){
+  .red-background-block {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 506px) {
+  .main__second-section{
+    height: 1100px;
+  }
+
+  .main__photo-cars {
+    background-position: -200px;
+  }
+
+  .main__second-section__left-car, .main__second-section__right-car {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+
+  .main__second-section__info {
+    margin-top: 200px;
+    margin-left: 0;
+    width: 260px;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .main__second-section__info__gift {
+    align-self: flex-start;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 411px){
+  .red-background-block {
+    height: 1050px;
+  }
+}
+
+@media screen and (max-width: 392px){
+  .red-background-block {
+    height: 1090px;
+  }
+
+  .main__photo-cars {
+    background-position: -250px;
+  }
+
+  .main__first-section__credit h1 {
+    font-size: 46px;
+  }
+}
